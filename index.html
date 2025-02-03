@@ -13,6 +13,14 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <!-- AOS animation css link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Css Link -->
     <link rel="stylesheet" href="./assets/css/main.css" />
     <title>Nest</title>
@@ -117,7 +125,7 @@
       </div>
       <div class="header-bottom">
         <div class="browse_all_categories">
-           <span>browse all categories <i class="bx bx-chevron-down"></i></span>
+          <span>browse all categories <i class="bx bx-chevron-down"></i></span>
         </div>
         <nav>
           <ul>
@@ -156,12 +164,61 @@
     </header>
     <!-- Header End -->
     <!-- Main Start -->
+    <main>
+      <section class="main-slider">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/images/slider-1.png" alt="" />
+              <div
+                class="slider-text-content"
+                data-aos="zoom-in-down"
+                data-aos-duration="2000"
+              >
+                <h1>Don’t miss amazing grocery deals</h1>
+                <p>Sign up for the daily newsletter</p>
+                <form>
+                  <i class="bx bx-paper-plane"></i>
+                  <input type="text" placeholder="Your emaill address..." />
+                  <button>subscribe</button>
+                </form>
+              </div>
+            </div>
+            <div
+              class="swiper-slide"
+              data-aos="zoom-in-down"
+              data-aos-duration="2000"
+            >
+              <img src="./assets/images/slider-2.png" alt="" />
+              <div class="slider-text-content">
+                <h1>Fresh Vegetables Big discount</h1>
+                <p>Save up to 50% off on your first order</p>
+                <form>
+                  <i class="bx bx-paper-plane"></i>
+                  <input type="text" placeholder="Your emaill address..." />
+                  <button>subscribe</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </section>
+    </main>
     <!-- Main End -->
     <!-- Footer Start -->
     <!-- Footer End -->
-
+    <!-- AOS js link -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <!-- swipper js link -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Js Link   -->
     <script src="./assets/js/home.js"></script>
   </body>

@@ -50,5 +50,40 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+// featured sliders
+var swiper = new Swiper(".featured-slider", {
+  slidesPerView: 8,
+  spaceBetween: 30,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    
+
+    1200: {
+      slidesPerView: 7,
+    },
+    1054: {
+      slidesPerView: 6,
+    },
+    991: {
+      slidesPerView: 5,
+     },
+     768: {
+      slidesPerView: 4,
+     },
+     576: {
+      slidesPerView: 3,
+     },
+     450: {
+      slidesPerView: 2,
+     },
+     360: {
+      slidesPerView: 2,
+     },
+  },
+});
 // AOS function
 AOS.init();

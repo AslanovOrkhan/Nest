@@ -108,6 +108,19 @@ main .main-slider .swiper .swiper-pagination-bullet {
 main .main-slider .swiper .swiper-pagination-bullet:hover {
   background: #3bb77e;
 }
+main .featured-categories {
+  border: 1px solid #000;
+  padding: 2rem 1rem;
+}
+main .featured-categories .head {
+  border: 1px solid red;
+}
+main .featured-categories .head .title {
+  color: #253d4e;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: capitalize;
+}
 
 @media (max-width: 991px) {
   main .main-slider {

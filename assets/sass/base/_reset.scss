@@ -12,3 +12,6 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
+body::-webkit-scrollbar{
+  display: none;
+}

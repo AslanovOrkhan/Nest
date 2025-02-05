@@ -26,6 +26,52 @@
     <title>Nest</title>
   </head>
   <body>
+    <!-- scroll start -->
+    <div class="scroll_up">
+      <i class="bx bx-up-arrow-alt"></i>
+    </div>
+    <!-- scroll end -->
+    <!-- modal dialog start -->
+    <div class="dialog_modal_container">
+      <div class="modal-content">
+        <div class="modal-deal">
+          <span class="text-brand">Deal of the Day </span>
+          <a href="#" class="title">Organic fruit for your family's health</a>
+          <span class="price">
+            <span>$38</span>
+            <span>$52 </span>
+          </span>
+          <div class="product-price-cover">
+            <p>Hurry Up! Offer End In:</p>
+            <div class="countdown">
+              <div class="time">
+                <span id="day"></span>
+                <span class="time-name">days</span>
+              </div>
+              <div class="time">
+                <span id="hours"></span>
+                <span class="time-name">hours</span>
+              </div>
+              <div class="time">
+                <span id="minutes"></span>
+                <span class="time-name">mins</span>
+              </div>
+              <div class="time">
+                <span id="seconds"></span>
+                <span class="time-name">sec</span>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="shop_btn">
+            <span>shop now</span>
+            <i class="bx bx-right-arrow-alt"></i>
+          </a>
+        </div>
+        <i class="bx bx-x" id="close-modal-btn"></i>
+      </div>
+    </div>
+    <!-- modal dialog end -->
+
     <!-- Header Start -->
     <header>
       <div class="header-top">
@@ -207,7 +253,7 @@
         </div>
       </section>
       <section class="featured-categories">
-        <div class="head">
+        <div class="head" data-aos="fade-down" data-aos-duration="500">
           <div class="heading">
             <h2 class="title">Featured Categories</h2>
             <ul class="category">
@@ -224,7 +270,11 @@
         </div>
         <div class="swiper featured-slider">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            <div
+              class="swiper-slide"
+              data-aos="fade-down"
+              data-aos-duration="500"
+            >
               <div class="image">
                 <img src="./assets/images/cat-1.png" alt="" />
               </div>
@@ -233,7 +283,11 @@
                 <span class="count">72 items</span>
               </div>
             </div>
-            <div class="swiper-slide">
+            <div
+              class="swiper-slide"
+              data-aos="fade-down"
+              data-aos-duration="500"
+            >
               <div class="image">
                 <img src="./assets/images/cat-12.png" alt="" />
               </div>
@@ -242,7 +296,11 @@
                 <span class="count">28 items</span>
               </div>
             </div>
-            <div class="swiper-slide">
+            <div
+              class="swiper-slide"
+              data-aos="fade-down"
+              data-aos-duration="500"
+            >
               <div class="image">
                 <img src="./assets/images/cat-4.png" alt="" />
               </div>
@@ -251,7 +309,11 @@
                 <span class="count">123 items</span>
               </div>
             </div>
-            <div class="swiper-slide">
+            <div
+              class="swiper-slide"
+              data-aos="fade-down"
+              data-aos-duration="500"
+            >
               <div class="image">
                 <img src="./assets/images/cat-15.png" alt="" />
               </div>
@@ -260,7 +322,11 @@
                 <span class="count">87 items</span>
               </div>
             </div>
-            <div class="swiper-slide">
+            <div
+              class="swiper-slide"
+              data-aos="fade-down"
+              data-aos-duration="500"
+            >
               <div class="image">
                 <img src="./assets/images/cat-5.png" alt="" />
               </div>
@@ -269,7 +335,11 @@
                 <span class="count">34 items</span>
               </div>
             </div>
-            <div class="swiper-slide">
+            <div
+              class="swiper-slide"
+              data-aos="fade-down"
+              data-aos-duration="500"
+            >
               <div class="image">
                 <img src="./assets/images/cat-14.png" alt="" />
               </div>
@@ -278,7 +348,11 @@
                 <span class="count">89 items</span>
               </div>
             </div>
-            <div class="swiper-slide">
+            <div
+              class="swiper-slide"
+              data-aos="fade-down"
+              data-aos-duration="500"
+            >
               <div class="image">
                 <img src="./assets/images/cat-13.png" alt="" />
               </div>
@@ -287,7 +361,11 @@
                 <span class="count">26 items</span>
               </div>
             </div>
-            <div class="swiper-slide">
+            <div
+              class="swiper-slide"
+              data-aos="fade-down"
+              data-aos-duration="500"
+            >
               <div class="image">
                 <img src="./assets/images/cat-2.png" alt="" />
               </div>
@@ -296,7 +374,11 @@
                 <span class="count">36 items</span>
               </div>
             </div>
-            <div class="swiper-slide">
+            <div
+              class="swiper-slide"
+              data-aos="fade-down"
+              data-aos-duration="500"
+            >
               <div class="image">
                 <img src="./assets/images/cat-3.png" alt="" />
               </div>
@@ -318,31 +400,377 @@
         </div>
       </section>
       <section class="banner">
-        <div class="item">
+        <div class="item" data-aos="fade-right" data-aos-duration="500">
           <div class="image">
-            <img src="./assets/images/banner-1.png" alt="">
+            <img src="./assets/images/banner-1.png" alt="" />
           </div>
           <div class="text">
             <span>Everyday Fresh & Clean with Our Products</span>
             <a href="#"> shop now <i class="bx bx-right-arrow-alt"></i> </a>
           </div>
         </div>
-        <div class="item">
+        <div class="item" data-aos="fade-up" data-aos-duration="500">
           <div class="image">
-            <img src="./assets/images/banner-2.png" alt="">
+            <img src="./assets/images/banner-2.png" alt="" />
           </div>
           <div class="text">
             <span>Make your Breakfast Healthy and Easy</span>
             <a href="#"> shop now <i class="bx bx-right-arrow-alt"></i> </a>
           </div>
         </div>
-        <div class="item">
+        <div class="item" data-aos="fade-left" data-aos-duration="500">
           <div class="image">
-            <img src="./assets/images/banner-3.png" alt="">
+            <img src="./assets/images/banner-3.png" alt="" />
           </div>
           <div class="text">
             <span>The best Organic Products Online</span>
             <a href="#"> shop now <i class="bx bx-right-arrow-alt"></i> </a>
+          </div>
+        </div>
+      </section>
+      <section class="popular-product">
+        <div class="heading">
+          <h2 class="title">Popular Products</h2>
+          <ul class="category">
+            <li class="active">All</li>
+            <li>Milks & Dairies</li>
+            <li>Coffes & Teas</li>
+            <li>Pet Foods</li>
+            <li>Meats</li>
+            <li>Vegetables</li>
+            <li>Fruits</li>
+          </ul>
+        </div>
+        <div class="container">
+          <div class="procut-item">
+            <div class="product-image">
+              <img src="./assets/images/product-1-1.jpg" alt="" />
+              <img src="./assets/images/product-1-2.jpg" alt="" />
+            </div>
+            <div class="product-content-wrap">
+              <a href="#" class="product-category">snack</a>
+              <a href="#" class="product-title">
+                Seeds of Change Organic Quinoa, Brown, & Red Rice
+              </a>
+              <div class="product-item-bottom">
+                <div class="product-price">
+                  <span class="price">$28.85</span>
+                  <span class="old-price">$32.8</span>
+                </div>
+                <div class="product-card-icon">
+                  <i class="bx bx-cart"></i>
+                  <span>add</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="procut-item">
+            <div class="product-image">
+              <img src="./assets/images/product-1-1.jpg" alt="" />
+              <img src="./assets/images/product-1-2.jpg" alt="" />
+            </div>
+            <div class="product-content-wrap">
+              <a href="#" class="product-category">snack</a>
+              <a href="#" class="product-title">
+                Seeds of Change Organic Quinoa, Brown, & Red Rice
+              </a>
+              <div class="product-item-bottom">
+                <div class="product-price">
+                  <span class="price">$28.85</span>
+                  <span class="old-price">$32.8</span>
+                </div>
+                <div class="product-card-icon">
+                  <i class="bx bx-cart"></i>
+                  <span>add</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="procut-item">
+            <div class="product-image">
+              <img src="./assets/images/product-1-1.jpg" alt="" />
+              <img src="./assets/images/product-1-2.jpg" alt="" />
+            </div>
+            <div class="product-content-wrap">
+              <a href="#" class="product-category">snack</a>
+              <a href="#" class="product-title">
+                Seeds of Change Organic Quinoa, Brown, & Red Rice
+              </a>
+              <div class="product-item-bottom">
+                <div class="product-price">
+                  <span class="price">$28.85</span>
+                  <span class="old-price">$32.8</span>
+                </div>
+                <div class="product-card-icon">
+                  <i class="bx bx-cart"></i>
+                  <span>add</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="procut-item">
+            <div class="product-image">
+              <img src="./assets/images/product-1-1.jpg" alt="" />
+              <img src="./assets/images/product-1-2.jpg" alt="" />
+            </div>
+            <div class="product-content-wrap">
+              <a href="#" class="product-category">snack</a>
+              <a href="#" class="product-title">
+                Seeds of Change Organic Quinoa, Brown, & Red Rice
+              </a>
+              <div class="product-item-bottom">
+                <div class="product-price">
+                  <span class="price">$28.85</span>
+                  <span class="old-price">$32.8</span>
+                </div>
+                <div class="product-card-icon">
+                  <i class="bx bx-cart"></i>
+                  <span>add</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="procut-item">
+            <div class="product-image">
+              <img src="./assets/images/product-1-1.jpg" alt="" />
+              <img src="./assets/images/product-1-2.jpg" alt="" />
+            </div>
+            <div class="product-content-wrap">
+              <a href="#" class="product-category">snack</a>
+              <a href="#" class="product-title">
+                Seeds of Change Organic Quinoa, Brown, & Red Rice
+              </a>
+              <div class="product-item-bottom">
+                <div class="product-price">
+                  <span class="price">$28.85</span>
+                  <span class="old-price">$32.8</span>
+                </div>
+                <div class="product-card-icon">
+                  <i class="bx bx-cart"></i>
+                  <span>add</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="procut-item">
+            <div class="product-image">
+              <img src="./assets/images/product-1-1.jpg" alt="" />
+              <img src="./assets/images/product-1-2.jpg" alt="" />
+            </div>
+            <div class="product-content-wrap">
+              <a href="#" class="product-category">snack</a>
+              <a href="#" class="product-title">
+                Seeds of Change Organic Quinoa, Brown, & Red Rice
+              </a>
+              <div class="product-item-bottom">
+                <div class="product-price">
+                  <span class="price">$28.85</span>
+                  <span class="old-price">$32.8</span>
+                </div>
+                <div class="product-card-icon">
+                  <i class="bx bx-cart"></i>
+                  <span>add</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="procut-item">
+            <div class="product-image">
+              <img src="./assets/images/product-1-1.jpg" alt="" />
+              <img src="./assets/images/product-1-2.jpg" alt="" />
+            </div>
+            <div class="product-content-wrap">
+              <a href="#" class="product-category">snack</a>
+              <a href="#" class="product-title">
+                Seeds of Change Organic Quinoa, Brown, & Red Rice
+              </a>
+              <div class="product-item-bottom">
+                <div class="product-price">
+                  <span class="price">$28.85</span>
+                  <span class="old-price">$32.8</span>
+                </div>
+                <div class="product-card-icon">
+                  <i class="bx bx-cart"></i>
+                  <span>add</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="procut-item">
+            <div class="product-image">
+              <img src="./assets/images/product-1-1.jpg" alt="" />
+              <img src="./assets/images/product-1-2.jpg" alt="" />
+            </div>
+            <div class="product-content-wrap">
+              <a href="#" class="product-category">snack</a>
+              <a href="#" class="product-title">
+                Seeds of Change Organic Quinoa, Brown, & Red Rice
+              </a>
+              <div class="product-item-bottom">
+                <div class="product-price">
+                  <span class="price">$28.85</span>
+                  <span class="old-price">$32.8</span>
+                </div>
+                <div class="product-card-icon">
+                  <i class="bx bx-cart"></i>
+                  <span>add</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="procut-item">
+            <div class="product-image">
+              <img src="./assets/images/product-1-1.jpg" alt="" />
+              <img src="./assets/images/product-1-2.jpg" alt="" />
+            </div>
+            <div class="product-content-wrap">
+              <a href="#" class="product-category">snack</a>
+              <a href="#" class="product-title">
+                Seeds of Change Organic Quinoa, Brown, & Red Rice
+              </a>
+              <div class="product-item-bottom">
+                <div class="product-price">
+                  <span class="price">$28.85</span>
+                  <span class="old-price">$32.8</span>
+                </div>
+                <div class="product-card-icon">
+                  <i class="bx bx-cart"></i>
+                  <span>add</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="procut-item">
+            <div class="product-image">
+              <img src="./assets/images/product-1-1.jpg" alt="" />
+              <img src="./assets/images/product-1-2.jpg" alt="" />
+            </div>
+            <div class="product-content-wrap">
+              <a href="#" class="product-category">snack</a>
+              <a href="#" class="product-title">
+                Seeds of Change Organic Quinoa, Brown, & Red Rice
+              </a>
+              <div class="product-item-bottom">
+                <div class="product-price">
+                  <span class="price">$28.85</span>
+                  <span class="old-price">$32.8</span>
+                </div>
+                <div class="product-card-icon">
+                  <i class="bx bx-cart"></i>
+                  <span>add</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="procut-item">
+            <div class="product-image">
+              <img src="./assets/images/product-1-1.jpg" alt="" />
+              <img src="./assets/images/product-1-2.jpg" alt="" />
+            </div>
+            <div class="product-content-wrap">
+              <a href="#" class="product-category">snack</a>
+              <a href="#" class="product-title">
+                Seeds of Change Organic Quinoa, Brown, & Red Rice
+              </a>
+              <div class="product-item-bottom">
+                <div class="product-price">
+                  <span class="price">$28.85</span>
+                  <span class="old-price">$32.8</span>
+                </div>
+                <div class="product-card-icon">
+                  <i class="bx bx-cart"></i>
+                  <span>add</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="procut-item">
+            <div class="product-image">
+              <img src="./assets/images/product-1-1.jpg" alt="" />
+              <img src="./assets/images/product-1-2.jpg" alt="" />
+            </div>
+            <div class="product-content-wrap">
+              <a href="#" class="product-category">snack</a>
+              <a href="#" class="product-title">
+                Seeds of Change Organic Quinoa, Brown, & Red Rice
+              </a>
+              <div class="product-item-bottom">
+                <div class="product-price">
+                  <span class="price">$28.85</span>
+                  <span class="old-price">$32.8</span>
+                </div>
+                <div class="product-card-icon">
+                  <i class="bx bx-cart"></i>
+                  <span>add</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="procut-item">
+            <div class="product-image">
+              <img src="./assets/images/product-1-1.jpg" alt="" />
+              <img src="./assets/images/product-1-2.jpg" alt="" />
+            </div>
+            <div class="product-content-wrap">
+              <a href="#" class="product-category">snack</a>
+              <a href="#" class="product-title">
+                Seeds of Change Organic Quinoa, Brown, & Red Rice
+              </a>
+              <div class="product-item-bottom">
+                <div class="product-price">
+                  <span class="price">$28.85</span>
+                  <span class="old-price">$32.8</span>
+                </div>
+                <div class="product-card-icon">
+                  <i class="bx bx-cart"></i>
+                  <span>add</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="procut-item">
+            <div class="product-image">
+              <img src="./assets/images/product-1-1.jpg" alt="" />
+              <img src="./assets/images/product-1-2.jpg" alt="" />
+            </div>
+            <div class="product-content-wrap">
+              <a href="#" class="product-category">snack</a>
+              <a href="#" class="product-title">
+                Seeds of Change Organic Quinoa, Brown, & Red Rice
+              </a>
+              <div class="product-item-bottom">
+                <div class="product-price">
+                  <span class="price">$28.85</span>
+                  <span class="old-price">$32.8</span>
+                </div>
+                <div class="product-card-icon">
+                  <i class="bx bx-cart"></i>
+                  <span>add</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="procut-item">
+            <div class="product-image">
+              <img src="./assets/images/product-1-1.jpg" alt="" />
+              <img src="./assets/images/product-1-2.jpg" alt="" />
+            </div>
+            <div class="product-content-wrap">
+              <a href="#" class="product-category">snack</a>
+              <a href="#" class="product-title">
+                Seeds of Change Organic Quinoa, Brown, & Red Rice
+              </a>
+              <div class="product-item-bottom">
+                <div class="product-price">
+                  <span class="price">$28.85</span>
+                  <span class="old-price">$32.8</span>
+                </div>
+                <div class="product-card-icon">
+                  <i class="bx bx-cart"></i>
+                  <span>add</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

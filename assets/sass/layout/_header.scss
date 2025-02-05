@@ -264,6 +264,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 1.4rem 1rem;
+    background: #fff;
     .browse_all_categories {
       border-radius: 5px;
       padding: 0.7rem 1rem;
@@ -392,10 +393,10 @@ header {
     }
   }
 }
-@media (max-width:768px) {
-  header{
-    .header-bottom{
-      nav{
+@media (max-width: 768px) {
+  header {
+    .header-bottom {
+      nav {
         display: none;
       }
     }

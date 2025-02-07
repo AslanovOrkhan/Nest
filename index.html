@@ -24,7 +24,7 @@
     <!-- Css Link -->
     <link rel="stylesheet" href="./assets/css/main.css" />
     <title>Nest</title>
-  </head>
+     </head>
   <body>
     <!-- scroll start -->
     <div class="scroll_up">
@@ -32,7 +32,7 @@
     </div>
     <!-- scroll end -->
     <!-- modal dialog start -->
-    <div class="dialog_modal_container">
+     <div class="dialog_modal_container">
       <div class="modal-content">
         <div class="modal-deal">
           <span class="text-brand">Deal of the Day </span>
@@ -69,8 +69,8 @@
         </div>
         <i class="bx bx-x" id="close-modal-btn"></i>
       </div>
-    </div>
-    <!-- modal dialog end -->
+    </div> 
+   <!-- modal dialog end  -->
 
     <!-- Header Start -->
     <header>
@@ -155,10 +155,10 @@
             <span>wishlist</span>
           </div>
           <div class="icons">
-            <div class="count-icons">
-              <span class="quantity">0</span>
+            <a href="shopCart.html" class="count-icons">
+              <span class="quantity" id="basket-quantity">0</span>
               <i class="bx bx-cart"></i>
-            </div>
+            </a>
             <span>cart</span>
           </div>
           <div class="icons">
@@ -442,7 +442,29 @@
           </ul>
         </div>
         <div class="container">
-          <div class="procut-item">
+          <!-- <div class="procut-item">
+            <div class="product-image">
+              <img src="./assets/images/product-1-1.jpg" alt="" />
+              <img src="./assets/images/product-1-2.jpg" alt="" />
+            </div>
+            <div class="product-content-wrap">
+              <a href="#" class="product-category">snack</a>
+              <a href="#" class="product-title">
+                Seeds of Change Organic Quinoa, Brown, & Red Rice
+              </a>
+              <div class="product-item-bottom">
+                <div class="product-price">
+                  <span class="price">$28.85</span>
+                  <span class="old-price">$32.8</span>
+                </div>
+                <div class="product-card-icon">
+                  <i class="bx bx-cart"></i>
+                  <span>add</span>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <!-- <div class="procut-item">
             <div class="product-image">
               <img src="./assets/images/product-1-1.jpg" alt="" />
               <img src="./assets/images/product-1-2.jpg" alt="" />
@@ -749,29 +771,7 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="procut-item">
-            <div class="product-image">
-              <img src="./assets/images/product-1-1.jpg" alt="" />
-              <img src="./assets/images/product-1-2.jpg" alt="" />
-            </div>
-            <div class="product-content-wrap">
-              <a href="#" class="product-category">snack</a>
-              <a href="#" class="product-title">
-                Seeds of Change Organic Quinoa, Brown, & Red Rice
-              </a>
-              <div class="product-item-bottom">
-                <div class="product-price">
-                  <span class="price">$28.85</span>
-                  <span class="old-price">$32.8</span>
-                </div>
-                <div class="product-card-icon">
-                  <i class="bx bx-cart"></i>
-                  <span>add</span>
-                </div>
-              </div>
-            </div>
-          </div>
+          </div>   -->
         </div>
       </section>
     </main>
@@ -788,6 +788,6 @@
     <!-- swipper js link -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Js Link   -->
-    <script src="./assets/js/home.js"></script>
+   <script type="module" src="./assets/js/home.js"></script>
   </body>
 </html>

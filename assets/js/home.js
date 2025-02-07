@@ -1,3 +1,31 @@
+import product from "./data.js";
+import { renderProductList } from "./helper.js";
+import { BasketItems } from "./class.js";
+const basketBadge = document.getElementById("basket-quantity");
+let basketApp = undefined;
+
+document.addEventListener("DOMContentLoaded", function () {
+  renderProductList(product);
+  basketApp = new BasketItems();
+
+  basketBadge.textContent = basketApp.basketItems.length;
+
+  const basketBtns = Array.from(
+    document.querySelectorAll(".product-card-icon")
+  );
+  basketBtns.forEach((btn) => {
+    btn.addEventListener("click", function () {
+      const newBasketItem = { id: this.getAttribute("data-id"), quantity: 1 };
+      const result = basketApp.add(newBasketItem);
+      if (result.isNew) {
+        basketBadge.textContent = Number(basketBadge.textContent) + 1;
+      }
+    });
+  });
+});
+
+
+ 
 let laguageSelect = document.querySelector(".language-select");
 let selected = document.querySelector(".select-selected");
 let selectItems = document.querySelector(".select-items");
@@ -38,7 +66,7 @@ categoryItems.forEach((item) => {
   });
 });
 
-// swipper js
+// // swipper js
 var swiper = new Swiper(".mySwiper", {
   loop: true,
   navigation: {
@@ -50,7 +78,7 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-// featured sliders
+// // featured sliders
 var swiper = new Swiper(".featured-slider", {
   slidesPerView: 8,
   spaceBetween: 30,

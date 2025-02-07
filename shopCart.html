@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- box icons cdn link -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- swipper css link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- AOS animation css link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Css Link -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <title>Shop cart Page</title>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <!-- scroll start  -->
+    <div class="scroll_up">
+      <i class="bx bx-up-arrow-alt"></i>
+    </div>
+    <!-- scroll end -->
+    <!-- Header Start -->
+    <header>
+      <div class="header-top">
+        <div class="header-info-left">
+          <ul>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">my account</a></li>
+            <li><a href="#">wishlist</a></li>
+            <li><a href="#">order tracking</a></li>
+          </ul>
+        </div>
+        <div class="mobile-promotion">
+          <span
+            >Grand opening, <strong>up to 15%</strong> off all items. Only
+            <strong>3 days</strong> left</span
+          >
+        </div>
+        <div class="header-info-right">
+          <span class="text">Need help? Call Us: <span>+ 1800 900</span></span>
+          <div class="language-select">
+            <div class="select-selected">
+              <span> english</span>
+              <img src="/assets/images/flag-dt.png" alt="img" />
+            </div>
+            <div class="select-items">
+              <div class="lng-option">
+                <img src="/assets/images/flag-dt.png" alt="img" /><span
+                  >english</span
+                >
+              </div>
+              <div class="lng-option">
+                <img src="/assets/images/flag-fr.png" alt="img" /><span
+                  >frachis</span
+                >
+              </div>
+              <div class="lng-option">
+                <img src="/assets/images/flag-ru.png" alt="img" />
+                <span>russia</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-middle">
+        <a href="/index.html" class="logo">
+          <img src="./assets/icons/logo.svg" alt="" />
+        </a>
+        <i class="bx bx-menu" id="toggle-menu"></i>
+        <div class="search-bar">
+          <div class="selection">
+            <div class="selection-rendered">
+              <span>all categories</span>
+              <i class="bx bxs-chevron-down"></i>
+            </div>
+            <div class="selection-categories">
+              <input type="text" placeholder="Search.." />
+              <ul>
+                <li class="active">Milks and Dairies</li>
+                <li>Wines & Alcohol</li>
+                <li>Clothing & Beauty</li>
+                <li>Pet Foods & Toy</li>
+                <li>Fast food</li>
+                <li>Baking material</li>
+                <li>Vegetables</li>
+                <li>Fresh Seafood</li>
+                <li>Ice cream</li>
+              </ul>
+            </div>
+          </div>
+          <form>
+            <input type="text" placeholder="Search for items...." />
+            <i class="bx bx-search" id="search"></i>
+          </form>
+        </div>
+        <div class="header-action-right">
+          <div class="icons">
+            <div class="count-icons">
+              <span class="quantity">0</span>
+              <i class="bx bx-heart"></i>
+            </div>
+            <span>wishlist</span>
+          </div>
+          <div class="icons">
+            <a href="./assets/shopCart.html" class="count-icons">
+              <span class="quantity" id="basket-quantity">0</span>
+              <i class="bx bx-cart"></i>
+            </a>
+            <span>cart</span>
+          </div>
+          <div class="icons">
+            <div class="count-icons">
+              <i class="bx bx-user"></i>
+            </div>
+            <span>user</span>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="browse_all_categories">
+          <span>browse all categories <i class="bx bx-chevron-down"></i></span>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="#" class="active"
+                >home <i class="bx bx-chevron-down"></i
+              ></a>
+            </li>
+            <li><a href="#">about</a></li>
+            <li>
+              <a href="#">shop<i class="bx bx-chevron-down"></i></a>
+            </li>
+            <li>
+              <a href="#">vendors<i class="bx bx-chevron-down"></i></a>
+            </li>
+            <li>
+              <a href="#">mega menu<i class="bx bx-chevron-down"></i></a>
+            </li>
+            <li>
+              <a href="#">blog<i class="bx bx-chevron-down"></i></a>
+            </li>
+            <li>
+              <a href="#">pages<i class="bx bx-chevron-down"></i></a>
+            </li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </nav>
+        <div class="headphone-contact">
+          <i class="bx bx-headphone"></i>
+          <div>
+            <span>1900 - 888</span>
+            <p>24/7 Support Center</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+    <!-- main start -->
+    <main>
+      <section class="shop-cart-container">
+        <div class="title">
+          <h1>Your Cart</h1>
+        </div>
+        <div class="cart-table-container">
+          <table>
+            <tr>
+              <th>id</th>
+              <th>image</th>
+              <th>name</th>
+              <th>quantity</th>
+              <th>price</th>
+              <th>total price</th>
+              <th>remove</th>
+            </tr>
+            <tr class="t_body"></tr>
+          </table>
+        </div>
+      </section>
+    </main>
+    <!-- main end -->
+    <script type="module" src="./assets/js/basket.js"></script>
+    <script type="module" src="./assets/js/home.js"></script>
+  </body>
+</html>

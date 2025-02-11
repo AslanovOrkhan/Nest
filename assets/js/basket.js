@@ -1,13 +1,16 @@
 import { BasketItems } from "./class.js";
 import product from "./data.js";
-const tBody = document.querySelector(".t_body");
+const tBody = document.querySelector("tbody");
+const subtotal = document.querySelector(".subtotal");
+const order = document.querySelector(".order");
+let basketApp;
 document.addEventListener("DOMContentLoaded", function () {
-  const basketApp = new BasketItems();
-  console.log(basketApp);
+  basketApp = new BasketItems();
+  let priceSum = 0;
   basketApp.basketItems.forEach((basketItem) => {
     const products = product.find((x) => x.id == basketItem.id);
     tBody.innerHTML += `
-                  <tr>
+        <tr>
         <td>${products.id}</td>
         <td><img src="${products.imageFront}" alt="" /></td>
         <td>${products.title}</td>
@@ -21,7 +24,16 @@ document.addEventListener("DOMContentLoaded", function () {
         <td><i class="bx bx-trash" id="trash"></i></td>
       </tr>
     `;
+    priceSum += product.newPrice * basketItem.quantity;
   });
+  subtotal.textContent = priceSum;
+  console.log(priceSum);
+});
+
+order.addEventListener("click", function () {
+  tBody.innerHTML = "";
+  subtotal.textContent = "no item";
+  basketApp.clear();
 });
 
 export function initializeBasketApp(product, basketApp, basketBadge) {
@@ -45,3 +57,9 @@ export function initializeBasketApp(product, basketApp, basketBadge) {
     });
   });
 }
+
+Pace.on("done", function () {
+  setTimeout(() => {
+    document.querySelector(".pace").style.display = "none";
+  }, 3000); // 3 saniyə gözləyir
+});

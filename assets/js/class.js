@@ -57,7 +57,7 @@ export class BasketItems {
     return {
       message:found ? "basket item quantity increased" : "new basket item added",
       data: this.basketItems,
-      isNew: found ?false : true
+      isNew: found ? false : true
     };
   }
   clear() {

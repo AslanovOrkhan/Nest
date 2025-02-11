@@ -9,43 +9,13 @@ main {
         text-align: center;
       }
     }
-    .cart-table-container {
+    .table {
       width: 100%;
-      display: block;
-      table {
-        width: 100%;
-        border-collapse: collapse;
-         display: block;
-         border: 1px solid red;
-         tr {
-            margin-top: 1rem;
-            &:first-child{
-                background-color: black;
-                th{
-                    color: aliceblue;
-                    text-transform: capitalize;
-                    font-size: 1.1rem;
-                }
-            }
-          th,
-          td {
-            padding: 10px;
-            text-align: center;
-             img {
-              width: 150px;
-              height: 150px;
-              object-fit: cover;
-            }
-            i{
-                cursor: pointer;
-                border: 1px solid #c8c6c6;
-                margin: 0 .1rem;
-                border-radius: 3px;
-            }
-            #trash{
-                padding: .2rem;
-            }
-          }
+      tbody {
+        img {
+          width: 200px;
+          height: 220px;
+          object-fit: cover;
         }
       }
     }

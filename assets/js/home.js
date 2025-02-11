@@ -7,9 +7,7 @@ let basketApp = undefined;
 document.addEventListener("DOMContentLoaded", function () {
   renderProductList(product);
   basketApp = new BasketItems();
-
   basketBadge.textContent = basketApp.basketItems.length;
-
   const basketBtns = Array.from(
     document.querySelectorAll(".product-card-icon")
   );
@@ -24,8 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
- 
 let laguageSelect = document.querySelector(".language-select");
 let selected = document.querySelector(".select-selected");
 let selectItems = document.querySelector(".select-items");

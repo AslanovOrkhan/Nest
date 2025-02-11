@@ -1,5 +1,5 @@
 import product from "./data.js";
-import { renderProductList } from "./helper.js";
+import { renderProductList, hidePreloader } from "./helper.js";
 import { BasketItems } from "./class.js";
 const basketBadge = document.getElementById("basket-quantity");
 let basketApp = undefined;
@@ -161,10 +161,6 @@ closeModalBtn.addEventListener("click", () => {
   dialogModalContainer.classList.add("close");
 });
 
-// loader
 document.addEventListener("DOMContentLoaded", function () {
-  setTimeout(() => {
-    document.getElementById("preloader").style.display = "none";
-    document.getElementById("body").classList.remove("hidden");
-  }, 1000);  
+  hidePreloader();
 });

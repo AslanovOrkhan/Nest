@@ -29,3 +29,12 @@ export function renderProductList(arr) {
     `;
   });
 }
+
+// loader
+
+export function hidePreloader() {
+  setTimeout(() => {
+    document.getElementById("preloader").style.display = "none";  
+    document.getElementById("body").classList.remove("hidden");   
+  }, 1000);  
+}

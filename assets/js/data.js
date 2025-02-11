@@ -22,7 +22,7 @@ const product = [
   {
     id: 3,
     title: "Angie’s Boomchickapop Sweet & Salty Kettle Corn",
-    newPrice:48.85,
+    newPrice: 48.85,
     oldPrice: 52.8,
     category: "StarKist",
     discountPercentace: 0,
@@ -32,7 +32,7 @@ const product = [
   {
     id: 4,
     title: "Foster Farms Takeout Crispy Classic Buffalo Wings",
-    newPrice:17.85,
+    newPrice: 17.85,
     oldPrice: 19.8,
     category: "NestFood",
     discountPercentace: 10,
@@ -42,7 +42,7 @@ const product = [
   {
     id: 5,
     title: "Chobani Complete Vanilla Greek Yogurt",
-    newPrice:54.85,
+    newPrice: 54.85,
     oldPrice: 55.8,
     category: "NestFood",
     discountPercentace: 10,
@@ -52,7 +52,7 @@ const product = [
   {
     id: 6,
     title: "Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g",
-    newPrice:32.85,
+    newPrice: 32.85,
     oldPrice: 33.8,
     category: "NestFood",
     discountPercentace: 10,
@@ -62,7 +62,7 @@ const product = [
   {
     id: 7,
     title: "Gorton’s Beer Battered Fish Fillets with soft paper",
-    newPrice:23.85,
+    newPrice: 23.85,
     oldPrice: 25.8,
     category: "NestFood",
     discountPercentace: 15,

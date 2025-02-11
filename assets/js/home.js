@@ -157,10 +157,14 @@ let y = setInterval(function () {
 let closeModalBtn = document.getElementById("close-modal-btn");
 let dialogModalContainer = document.querySelector(".dialog_modal_container");
 
-window.onload = function () {
-  dialogModalContainer.classList.remove("close");
-};
-
 closeModalBtn.addEventListener("click", () => {
   dialogModalContainer.classList.add("close");
+});
+
+// loader
+document.addEventListener("DOMContentLoaded", function () {
+  setTimeout(() => {
+    document.getElementById("preloader").style.display = "none";
+    document.getElementById("body").classList.remove("hidden");
+  }, 1000);  
 });
